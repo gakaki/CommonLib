@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CommonLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        CommonLib.test()
     }
 
     override func didReceiveMemoryWarning() {
