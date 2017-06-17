@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CommonLib_Example' do
+  pod 'CommonLib', :path => '../'
+
+  target 'CommonLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
