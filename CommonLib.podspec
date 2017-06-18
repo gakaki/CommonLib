@@ -1,8 +1,6 @@
-
-
 Pod::Spec.new do |s|
   s.name             = 'CommonLib'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'CommonLib description'
 
   s.description      = <<-DESC
@@ -27,4 +25,7 @@ CommonLib long description
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.dependency 'UMengAnalyticsSwift'
+
 end
