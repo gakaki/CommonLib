@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UMMobClick
 
 public class CommonLib {
     
@@ -14,6 +15,11 @@ public class CommonLib {
     }
     public static func test(){
         print("commonlib test")
+        
+        let um = UMAnalyticsConfig.sharedInstance()
+        um?.appKey = "12312321"
+        
+        MobClick.event("12312321")
     }
     
 }

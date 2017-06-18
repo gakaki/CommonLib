@@ -10,13 +10,16 @@ import UIKit
 import CommonLib
 import UMMobClick
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let um = UMAnalyticsConfig.sharedInstance()
-        um?.appKey = "123213"
+        
         CommonLib.test()
+        MobClick.event("21321321")
+        let um = UMAnalyticsConfig.sharedInstance()
+        um?.appKey = "123123"
     }
 
     override func didReceiveMemoryWarning() {

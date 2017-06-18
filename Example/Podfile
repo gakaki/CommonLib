@@ -3,7 +3,7 @@ Pod::Installer::Xcode::TargetValidator.module_eval do
   def verify_no_static_framework_transitive_dependencies
     puts '-> cancel the verify static framework'
   end
-end+
+end
 
 use_frameworks!
 platform :ios, '9.0'

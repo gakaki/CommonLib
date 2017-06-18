@@ -1,6 +1,6 @@
 {
   "name": "CommonLib",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "CommonLib description",
   "description": "CommonLib long description",
   "homepage": "https://github.com/gakaki/CommonLib",
@@ -16,12 +16,17 @@
     "branch": "master"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "CommonLib/Classes/**/*",
-  "dependencies": {
-    "UMengAnalyticsSwift": [
-
-    ]
+  "vendored_frameworks": "vendor_frameworks/UMMobClick.framework",
+  "frameworks": "CoreTelephony",
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "requires_arc": false,
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/**\""
   }
 }
