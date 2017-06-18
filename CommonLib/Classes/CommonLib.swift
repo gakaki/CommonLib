@@ -16,6 +16,10 @@ public class CommonLib {
     public static func test(){
         print("commonlib test")
         
+        
+    }
+    
+    public static func um_config(){
         let um = UMAnalyticsConfig.sharedInstance()
         um?.appKey = "12312321"
         
